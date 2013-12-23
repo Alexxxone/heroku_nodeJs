@@ -3,6 +3,12 @@
  * GET users listing.
  */
 
-exports.list = function(req, res){
-  res.send("respond with a resource");
+exports.friends = function(req, res){
+
+  console.log('ROUTER');
+  var User = require('../models/user').User;
+  User.findOne({email: 'ba@mail.ru'}, function(err,friends){
+     console.log(friends);
+     res.render('friends', {title: "friends", friends: friends });
+  })
 };

@@ -9,3 +9,11 @@ a {
 .middle_opacity{
     opacity: 0.5;
 }
+.left_menu{
+    list-style: none;
+}
+.left_menu li{
+    color:rgb(58, 111, 108);
+    margin-top:5px;
+    border-bottom:1px solid #f0ad4e;
+}

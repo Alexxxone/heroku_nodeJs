@@ -27,10 +27,6 @@ VIEWS INDEX VIEW
 </div>
 
 
-<div class="row">
-  <div class="col-xs-12 col-md-8">
-  </div>
-</div>
         <!-- Modal -->
 <div class="modal fade" id="enter_tour_name" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 <div class="modal-dialog">
@@ -40,14 +36,14 @@ VIEWS INDEX VIEW
       <h4 class="modal-title" id="myModalLabel">Enter Your Name</h4>
     </div>
     <div class="modal-body">
-      <form class="form-inline" role="form">
+      <form class="form-inline" role="form" id ='change_name'>
         <div class="form-group">
-          <input type="text" class="form-control new_name"  placeholder="Type your Name here">
+          <input type="text" class="form-control new_name" form="change_name" placeholder="Type your Name here">
         </div>
-      </form>
+
     </div>
     <div class="modal-footer">
-      <button type="button" class="btn btn-primary save_name">Ok</button>
+      <button type="submit" class="btn btn-primary save_name">Ok</button>
     </div>
   </div><!-- /.modal-content -->
 </div><!-- /.modal-dialog -->

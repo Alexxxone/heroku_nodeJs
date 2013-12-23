@@ -1,9 +1,10 @@
 var express = require('express');
 var routes = require('./routes');
-//var user = require('./routes/user');
+var user = require('./routes/user');
 var http = require('http');
 var path = require('path');
 var config = require('./config');
+var db = require('./lib/mongoose');
 
 
 var app = express();
@@ -57,8 +58,8 @@ app.use(express.urlencoded());
 
 app.use(express.session());
 
-//app.get('/', routes.index);
-//app.get('/users', user.list);
+app.get('/', routes.index);
+app.get('/friends', user.friends);
 
 
 

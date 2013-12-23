@@ -7,6 +7,8 @@
   },
   "dependencies": {
     "mongoose": "3.5.7",
+    "ejs-locals": "*",
+    "socket.io": "*",
     "express": "3.4.7",
     "ejs": "*"
   },
