@@ -7,7 +7,7 @@ var request = require("request");
 exports.friends = function(req, res){
 
     request({
-        uri: "http://localhost:3000/house.json",
+        uri: "http://alexxxxone-backend.herokuapp.com/house.json",
         method: 'GET',
         json: true
     }, function(error, response, body) {
