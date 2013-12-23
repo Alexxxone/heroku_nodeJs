@@ -1,12 +1,9 @@
 <% layout('layouts/index') %>
-        VIEWS FRIENDS VIEW
-
-
+  <h4>You have <%= friends.length %> friend('s)</h4>
 
  <hr>
  <br/>
-
-<%- friends.username %>
- <br/>
-<%- friends.email %>
+ <ul class="friends_list">
+   <%- partial('./partials/friend',friends) %>
+ </ul>
 

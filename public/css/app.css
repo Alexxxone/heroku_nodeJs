@@ -15,5 +15,33 @@ a {
 .left_menu li{
     color:rgb(58, 111, 108);
     margin-top:5px;
-    border-bottom:1px solid #f0ad4e;
+
+}
+.friends_list{
+    list-style: none;
+}
+.friends_list>li {
+  padding: 5px;
+  border:1px solid rgba(215, 244, 255, 0.52);
+  border-collapse:collapse;
+  vertical-align: middle;
+}
+.friends_list .friend_image{
+    display: inline-block;
+}
+.friend_actions_menu{
+    list-style: none;
+    display: inline;
+}
+.friend_actions p {
+    margin:5px 0;
+    font-size: 12px;
+}
+.friend_actions{
+    float:right;
+    display: inline-block;
+}
+.friend_info{
+    margin-left: 10px ;
+    display: inline-block;
 }

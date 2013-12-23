@@ -25,7 +25,6 @@ app.use(function(err,req,res,next){
     var errorHandler = express.errorHandler();
      errorHandler(err,req,res,next);
   }else{
-
       res.send(500);
   }
 });
@@ -51,7 +50,7 @@ app.set('views', path.join(__dirname, '/views'));
 app.set('view engine', 'ejs');
 
 
-app.use(express.favicon());
+app.use(express.favicon('./favicon.ico'));
 app.use(express.logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded());
