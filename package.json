@@ -6,6 +6,7 @@
     "start": "node app.js"
   },
   "dependencies": {
+    "request": "*",
     "mongoose": "3.5.7",
     "ejs-locals": "*",
     "socket.io": "*",

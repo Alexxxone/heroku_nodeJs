@@ -4,7 +4,8 @@ var user = require('./routes/user');
 var http = require('http');
 var path = require('path');
 var config = require('./config');
-var db = require('./lib/mongoose');
+
+//var db = require('./lib/mongoose');
 
 
 var app = express();

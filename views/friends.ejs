@@ -1,9 +1,10 @@
 <% layout('layouts/index') %>
-  <h4>You have <%= friends.length %> friend('s)</h4>
+  <h4>You have <%- friends.length %> friend('s)</h4>
 
  <hr>
  <br/>
  <ul class="friends_list">
    <%- partial('./partials/friend',friends) %>
+
  </ul>
 
